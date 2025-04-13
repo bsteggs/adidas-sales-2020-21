@@ -1,25 +1,57 @@
-# Adidas US Sales Dashboard (Excel)
+# Adidas U.S. Sales Dashboard (Excel)
 
-This project analyzes U.S. Adidas sales data using Excel to deliver a polished, interactive dashboard that highlights trends in revenue, product performance, and retailer contribution.
+An interactive business intelligence dashboard built in Microsoft Excel to analyze U.S. Adidas sales data. This project leverages Power Pivot, Power Query, and DAX to deliver dynamic insights on product performance, retail channel efficiency, and YoY growth across regions.
 
-# Project Summary
-- Analyzed over $817K in total revenue across 49,574 orders
-- Calculated KPIs like average order value ($38.31) and revenue per pizza ($16.50)
-- Identified peak performance times (Friday/Saturday evenings, 12–1 PM)
-- Ranked top products by both total units sold and revenue generated
+# Overview
 
-# Tools Used
-- **Excel** (Power Query, Pivot Tables, Charts, Slicers, Conditional Formatting)
-- **PowerPoint** (Custom dashboard layout design)
+This Excel-based dashboard allows users to explore:
 
-# Files
-- `Adidas US Final Sales Dashboard.xlsx` – The completed interactive dashboard
+- Year-over-Year (YoY) revenue growth and profit performance
+- Retailer rankings based on total sales and operating margin
+- Sales distribution by channel (Online, Outlet, In-Store)
+- Product-level profitability and margin insights
+- Geographic sales trends by region and U.S. state
 
-# Key Features
-- KPI tiles for revenue, order volume, AOV, and volatility
-- Sales trends by day, time, product category, and size
-- Best sellers breakdown by units and profit
-- Custom background layout for professional presentation
+The dashboard supports interactive filtering through slicers and timeline controls, with metrics dynamically updated via CUBEVALUE and PivotTable integration.
 
-# About the Data
-This dataset was originally sourced from a public pizza sales dataset on [Google Drive](https://drive.google.com/drive/folders/1ecpBALfFUMSK-GOnk-X4nZhC_uK18zih), adapted to simulate Adidas sales structure for practice and portfolio purposes.
+# Data Model
+
+The dataset is structured in a star schema using:
+
+- **Fact Table**: `Fact_Sales`  
+- **Dimension Tables**: `Dim_Product`, `Dim_Retailer`, `Dim_Date`
+
+Modeling and calculations were performed using **Power Pivot**, with DAX measures used to calculate Total Sales, Operating Profit, Average Order Value, and YoY change metrics.
+
+# Tools & Skills Used
+
+- Microsoft Excel  
+- Power Pivot  
+- Power Query  
+- DAX  
+- PivotTables & PivotCharts  
+- CUBEVALUE & CUBEMEMBER  
+- Timeline Slicers  
+- Filled Map Visuals
+
+# Key Metrics
+
+- **Total Sales**  
+- **YoY Sales Increase ($ and %)**  
+- **Operating Profit**  
+- **Gross Profit Margin**  
+- **Top 3 Retailers by Sales**  
+- **Sales by Region, Channel, and Product**
+
+# Dataset Source
+
+The sales dataset was sourced from [Kaggle](https://www.kaggle.com/datasets), titled "Adidas US Sales Data."
+
+# How to Use
+
+1. Download or clone the repository  
+2. Open the `Adidas US Final Sales Dashboard.xlsx` file in Excel  
+3. Navigate through the dashboard using slicers, charts, and KPIs  
+4. Explore the Data Model in Power Pivot for measures and structure
+
+
